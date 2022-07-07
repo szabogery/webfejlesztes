@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #container {
+      background: linear-gradient(
+        195deg,
+        rgba(194, 157, 55, 1) 0%,
+        rgb(11, 1, 49) 100%
+      );
+      height: 100vh;
+      padding-top: 100px;
+    }
+    #form {
+      width: 50%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      border: 5px solid black;
+      padding: 20px 30px;
+      background-color: white;
+      border-radius: 10px;
+      text-align: left;
+    }
+    input {
+      margin-bottom: 10px;
+    }
+    input:nth-of-type(3),
+    input:nth-of-type(4) {
+      width: 45%;
+      display: inline-block;
+    }
+    input:nth-of-type(4) {
+      width: 45.5%;
+    }
+
+    button {
+      width: 100px;
+      margin-left: auto;
+    }
+    #checkboxContainer {
+      height: 50px;
+    }
+    #checkboxLabel {
+      display: inline-block;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <form id="form">
+        <label for="sname">Vezetéknév:</label>
+        <input id="sname" type="text" name="sname" autofocus required />
+
+        <label for="fname">Keresztnév:</label>
+        <input id="fname" type="text" name="fname" disabled />
+
+        <label for="age">Kor:</label>
+        <input id="age" type="number" name="age" required min="0" />
+
+        <label for="bdate">Sz.Idő:</label>
+        <input id="bdate" type="date" name="bdate" required />
+
+        <label for="email">Emailcím:</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          placeholder="valami@valami.com"
+        />
+
+        <label for="password">Jelszó:</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          minlength="2"
+          maxlength="5"
+          required
+        />
+
+        <div id="checkboxContainer">
+          <label id="checkboxLabel" for="appr">Appr:</label>
+          <input id="appr" type="checkbox" name="appr" checked />
+        </div>
+
+        <div>
+          <input type="radio" id="huey" name="drone" value="huey" checked />
+          <label for="huey">Huey</label>
+        </div>
+
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey" />
+          <label for="dewey">Dewey</label>
+        </div>
+
+        <div>
+          <input type="radio" id="louie" name="drone" value="louie" />
+          <label for="louie">Louie</label>
+        </div>
+
+        <button type="submit">Elfogad</button>
+      </form>
+    </div>
+  </body>
+</html>
