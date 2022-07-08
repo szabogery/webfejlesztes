@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #baseContainer {
+      background: linear-gradient(
+        180deg,
+        rgba(0, 212, 255, 1) 0%,
+        rgba(5, 5, 245, 1) 84%,
+        rgba(2, 0, 36, 1) 100%
+      );
+      height: 100vp;
+      padding-top: 10px;
+      border-radius: 10px;
+    }
+    #bemutatkozas {
+      width: 80%;
+      margin: auto;
+      border: 2px outset blue;
+      border-radius: 10px;
+      background: linear-gradient(
+        4deg,
+        rgba(0, 212, 255, 1) 0%,
+        rgba(5, 5, 245, 1) 84%,
+        rgba(2, 0, 36, 1) 100%
+      );
+      opacity: 0.3;
+    }
+    #marketing {
+      width: 80%;
+      margin: auto;
+      border: 2px outset blue;
+      border-radius: 10px;
+      background: linear-gradient(
+        4deg,
+        rgba(0, 212, 255, 1) 0%,
+        rgba(5, 5, 245, 1) 84%,
+        rgba(2, 0, 36, 1) 100%
+      );
+      text-align: center;
+    }
+    #kepdiv {
+      width: 400px;
+      margin: auto;
+      border: 2px outset blue;
+      border-radius: 10px;
+    }
+    #videodiv {
+      width: 400px;
+      margin: auto;
+      border: 2px outset blue;
+      border-radius: 10px;
+    }
+    #formdiv {
+      height: 400px;
+      width: 400px;
+      margin: auto;
+      border: 2px outset blue;
+      border-radius: 10px;
+      padding: 50px 50px;
+    }
+    #form {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 50px 30px;
+      background-color: rgb(101, 4, 4);
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div id="baseContainer">
+      <br />
+      <br />
+      <div id="bemutatkozas">
+        <h1
+          title="Köszi"
+          style="
+            color: rgb(3, 8, 51);
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+            padding: 10px 15px;
+          "
+        >
+          Üdv!
+          <br />
+          Ez most egy rövid bemutatkozás,célja csak hogy legyen itt valami!
+          <br />
+          Néz szét hát ha látsz itt valmi érdekeset!
+          <br />
+          See Yaa!
+        </h1>
+      </div>
+      <br />
+      <br />
+      <div id="marketing">
+        <p style="padding: 10px 10px; color: brown; text-transform: uppercase">
+          Most csak 4.99 a Sub
+        </p>
+        <p style="padding: 10px 10px; color: brown; text-transform: uppercase">
+          Exlúzív tartalmak minden nap
+        </p>
+        <p style="padding: 10px 10px; color: brown; text-transform: uppercase">
+          Adok puszit
+        </p>
+        <button type="button">
+            <a href="#formdiv"><h3>Íratkozz fel!</h3></a></button>
+      </div>
+      <br />
+      <br />
+      <div id="kepdiv">
+        <p style="text-align: center">Én egy másik életben</p>
+        <img
+          title="az"
+          width="400"
+          height="350"
+          src="../HTML Homework/assets/cica.jpg"
+          alt="hupszi valami hiba történt"
+        />
+      </div>
+      <br />
+      <br />
+      <div id="videodiv">
+        <h5 style="text-align: center">Mikor pókemberes pizsamában alszom!</h5>
+        <video
+          title="órákat"
+          width="400"
+          height="350"
+          controls
+          autoplay
+          src="../HTML Homework/assets/fulcrum.black.widow.2021.720p-sample.mkv"
+        ></video>
+      </div>
+      <br />
+      <br />
+      <div id="formdiv">
+        <a href="#formdiv">formdiv</a>
+        <form id="form">
+           
+          <label style="background-color: red;" for="sname">Vezetéknév:</label>
+          <input id="sname" type="text" name="sname" />
+
+          <label style="background-color: red;" for="fname">Keresztnév:</label>
+          <input id="fname" type="text" name="fname" />
+
+         <div style="display: inline;">
+            <input type="radio" id="he" name="drone" value="he" checked />
+            <label for="he">He</label>
+  
+            <input type="radio" id="she" name="drone" value="she" />
+            <label for="she">She</label>
+         </div>
+
+          <label style="background-color: red;" for="bdate">Sz.Idő:</label>
+          <input id="bdate" type="date" name="bdate" required />
+
+          <label style="background-color: red;" for="email">Emailcím:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            placeholder="valami@valami.com"
+          />
+          <br>
+          <button style="text-align:center; background-color: blueviolet;" type="submit"><h3 style="color: orange;">Felíratkozás</h3></button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
