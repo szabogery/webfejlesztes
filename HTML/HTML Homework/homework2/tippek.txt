@@ -1,0 +1,2 @@
+img-hez
+heigth 100% width auto
