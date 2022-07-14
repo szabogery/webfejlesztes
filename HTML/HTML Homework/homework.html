@@ -7,79 +7,104 @@
     <title>Document</title>
   </head>
   <style>
-    #baseContainer {
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+    .bgc {
       background: linear-gradient(
         180deg,
         rgba(0, 212, 255, 1) 0%,
         rgba(5, 5, 245, 1) 84%,
         rgba(2, 0, 36, 1) 100%
       );
-      height: 100vp;
-      padding-top: 10px;
-      border-radius: 10px;
+    }
+    #baseContainer {
+      width: 80%;
+      margin: 0 auto;
+      background-color: black;
     }
     #bemutatkozas {
       width: 80%;
-      margin: auto;
       border: 2px outset blue;
       border-radius: 10px;
-      background: linear-gradient(
+      /* background: linear-gradient(
         4deg,
         rgba(0, 212, 255, 1) 0%,
         rgba(5, 5, 245, 1) 84%,
         rgba(2, 0, 36, 1) 100%
-      );
-      opacity: 0.3;
+      ); */
+      animation: fadein 1.5s linear forwards;
+      opacity: 0;
     }
     #marketing {
       width: 80%;
-      margin: auto;
       border: 2px outset blue;
       border-radius: 10px;
-      background: linear-gradient(
+      /* background: linear-gradient(
         4deg,
         rgba(0, 212, 255, 1) 0%,
         rgba(5, 5, 245, 1) 84%,
         rgba(2, 0, 36, 1) 100%
-      );
+      ); */
       text-align: center;
+      animation: fadeleft 1.5s ease-in-out forwards;
     }
     #kepdiv {
       width: 400px;
-      margin: auto;
       border: 2px outset blue;
       border-radius: 10px;
     }
     #videodiv {
       width: 400px;
-      margin: auto;
       border: 2px outset blue;
       border-radius: 10px;
     }
     #formdiv {
       height: 400px;
       width: 400px;
-      margin: auto;
       border: 2px outset blue;
       border-radius: 10px;
-      padding: 50px 50px;
+      /* padding: 50px 50px; */
     }
     #form {
       width: 80%;
-      margin: auto;
       display: flex;
       flex-direction: column;
       padding: 50px 30px;
-      background-color: rgb(101, 4, 4);
+      /* background-color: rgb(101, 4, 4); */
       border-radius: 10px;
       text-align: center;
+    }
+    div {
+      margin: 0 auto 15px;
+    }
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeleft {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
   </style>
   <body>
     <div id="baseContainer">
-      <br />
-      <br />
-      <div id="bemutatkozas">
+      <div id="bemutatkozas" class="bgc">
         <h1
           title="Köszi"
           style="
@@ -99,9 +124,7 @@
           See Yaa!
         </h1>
       </div>
-      <br />
-      <br />
-      <div id="marketing">
+      <div id="marketing" class="bgc">
         <p style="padding: 10px 10px; color: brown; text-transform: uppercase">
           Most csak 4.99 a Sub
         </p>
@@ -112,11 +135,10 @@
           Adok puszit
         </p>
         <button type="button">
-            <a href="#formdiv"><h3>Íratkozz fel!</h3></a></button>
+          <a href="#formdiv"><h3>Íratkozz fel!</h3></a>
+        </button>
       </div>
-      <br />
-      <br />
-      <div id="kepdiv">
+      <div id="kepdiv" class="bgc">
         <p style="text-align: center">Én egy másik életben</p>
         <img
           title="az"
@@ -126,9 +148,7 @@
           alt="hupszi valami hiba történt"
         />
       </div>
-      <br />
-      <br />
-      <div id="videodiv">
+      <div id="videodiv" class="bgc">
         <h5 style="text-align: center">Mikor pókemberes pizsamában alszom!</h5>
         <video
           title="órákat"
@@ -139,30 +159,26 @@
           src="../HTML Homework/assets/fulcrum.black.widow.2021.720p-sample.mkv"
         ></video>
       </div>
-      <br />
-      <br />
-      <div id="formdiv">
-        <a href="#formdiv">formdiv</a>
+      <div id="formdiv" class="bgc">
         <form id="form">
-           
-          <label style="background-color: red;" for="sname">Vezetéknév:</label>
+          <label style="background-color: red" for="sname">Vezetéknév:</label>
           <input id="sname" type="text" name="sname" />
 
-          <label style="background-color: red;" for="fname">Keresztnév:</label>
+          <label style="background-color: red" for="fname">Keresztnév:</label>
           <input id="fname" type="text" name="fname" />
 
-         <div style="display: inline;">
-            <input type="radio" id="he" name="drone" value="he" checked />
+          <div style="display: inline">
+            <input type="radio" id="he" name="valami" value="he" checked />
             <label for="he">He</label>
-  
-            <input type="radio" id="she" name="drone" value="she" />
-            <label for="she">She</label>
-         </div>
 
-          <label style="background-color: red;" for="bdate">Sz.Idő:</label>
+            <input type="radio" id="she" name="valami" value="she" />
+            <label for="she">She</label>
+          </div>
+
+          <label style="background-color: red" for="bdate">Sz.Idő:</label>
           <input id="bdate" type="date" name="bdate" required />
 
-          <label style="background-color: red;" for="email">Emailcím:</label>
+          <label style="background-color: red" for="email">Emailcím:</label>
           <input
             id="email"
             type="email"
@@ -170,8 +186,13 @@
             required
             placeholder="valami@valami.com"
           />
-          <br>
-          <button style="text-align:center; background-color: blueviolet;" type="submit"><h3 style="color: orange;">Felíratkozás</h3></button>
+          <br />
+          <button
+            style="text-align: center; background-color: blueviolet"
+            type="submit"
+          >
+            <h3 style="color: orange">Felíratkozás</h3>
+          </button>
         </form>
       </div>
     </div>
