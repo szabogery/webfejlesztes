@@ -12,10 +12,10 @@
       width: 480px;
       height: 800px;
     }
-    img {
+    /* img {
       height: 100%;
       width: auto;
-    }
+    } */
     .menuTable {
       background-color: #1e1e1e;
     }
@@ -34,9 +34,38 @@
       width: 116px;
     }
     .numbersTable {
-      width: 480px;
+      width: 481px;
       background-color: black;
     }
+    .szamok {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 70px;
+      border-style: solid;
+      border-color: black;
+      border-radius: 1px;
+      border: 1px 1px;
+      width: 158px;
+      height: 78px;
+      color: aliceblue;
+      background-color: #233c51;
+    }
+    .alsoKepek {
+      text-align: center;
+      border-style: solid;
+      border-color: black;
+      border-radius: 1px;
+      border: 1px 1px;
+      width: 158px;
+      height: 78px;
+      color: aliceblue;
+      background-color: #233c51;
+      }
+      .pBetuk {
+        display: inline;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+      }
     </style>
   <body>
     <div>
@@ -76,20 +105,74 @@
           <thead>
             <tr>
               <th style="padding: 10px; height: 70px; " colspan="3">
-                <font color="white" size="8" face="calibri" >06 30 1234567</font>
+                <font color="white" size="8" face="Arial, Helvetica, sans-serif" >06 30 1234567</font>
               </th>
               </tr>
+              <tr>
+                <th colspan="3" style="border: solid; border-width: 5px; border-radius: 7px; padding: 10px;" bgcolor="#4f575d">
+                  <img src="./assets/img/plusz.png" alt="">
+                  <font color="white" size="6" face="Arial, Helvetica, sans-serif" >Kapcsolatokhoz ad</font>
+                </th>
+              </tr>
+              <tbody>
+                <tr class="szamok">
+                  <td class="szamok">1
+                    <img src="./assets/img/reverseszem.png" alt="">
+                  </td>
+                  <td class="szamok">2
+                    <p class="pBetuk">ABC</p>
+                  </td>
+                  <td class="szamok">3
+                    <p class="pBetuk">DEF</p>
+                  </td>
+                </tr>
+                <tr class="szamok">
+                  <td class="szamok">4
+                    <p class="pBetuk">GHI</p>
+                   </td>
+                  <td class="szamok">5
+                    <p class="pBetuk">JKL</p>
+                  </td>
+                  <td class="szamok">6
+                    <p class="pBetuk">MNO</p>
+                  </td>
+                </tr>
+                <tr class="szamok">
+                  <td class="szamok">7
+                    <p class="pBetuk">PQRS</p>
+                  </td>
+                  <td class="szamok">8
+                    <p class="pBetuk">TUV</p>
+                  </td>
+                  <td class="szamok">9
+                    <p class="pBetuk">WXYZ</p>
+                  </td>
+                </tr>
+                <tr class="szamok">
+                  <td class="szamok">
+                    <img src="./assets/img/csillag.png" alt="">
+                  </td>
+                  <td class="szamok">0
+                    <p class="pBetuk">+</p>
+                  </td>
+                  <td class="szamok">
+                    <img src="./assets/img/mute.png" alt="">
+                  </td>
+                </tr>
+                <tr class="szamok">
+                  <td class="alsoKepek">
+                    <img src="./assets/img/kagylofej.png" alt=""></td>
+                  <td class="alsoKepek">
+                    <img src="./assets/img/kagylo.png" alt="">
+                  </td>
+                  <td class="alsoKepek">
+                    <img src="./assets/img/x.png" alt="">
+                  </td>
+                </tr>
+              </tbody>
           </thead>
         </table>
-        <table>
-          <thead>
-            <tr>
-              <th>
-                
-              </th>
-            </tr>
-          </thead>
-        </table>
+        
 
       </div>
     </div>
