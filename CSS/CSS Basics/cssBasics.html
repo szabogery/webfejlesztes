@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #simple {
+        background-color: red;
+    }
+    #combinator > h1 {
+        background-color: blue;
+    }
+    #combinator div h1 {
+        background-color: burlywood;
+    }
+    #pseudoclass {
+        color: yellow;
+    }
+    #pseudoclass:hover {
+        color: aqua;
+    }
+    #pseudoclass:visited {
+        color: brown;
+    }
+    #pseudoelement {
+        display: block;
+        position: relative;
+        margin-top: 10px;
+    }
+    #pseudoelement::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: coral;
+    }
+    div[title] {
+        color: blueviolet;
+    }
+    div[title="attr"] {
+        color: yellowgreen;
+    }
+    div.ilyen {
+        border: 1px solid chocolate;
+    }
+    div .ilyen2 {
+        color: darkgrey;
+    }
+    #picture {
+        height: 100px;
+        width: 100px;
+        margin-top: 20px;
+        /* border: 1px solid black; */  /* shorthand */
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        /* background-image: url(./img/cica.jpg);  
+        background-size: contain;
+        background-repeat: no-repeat; */
+        background: url(./img/mute.png) no-repeat right bottom; /* shorthand */
+    }
+    #borders {
+        width: 500px;
+        height: 250px;
+        margin-top: 10px;
+        border-top: 3px dotted black;
+        border-right: 3px dashed red;
+        border-bottom: 3px double blue;
+        border-left: 3px groove green;
+        /* border-radius: 8px; */
+        /* border-bottom-left-radius: 6px;
+        border-top-left-radius: 9px;
+        border-bottom-right-radius: 11px;
+        border-top-right-radius: 17px; */
+        /* border-radius: 5px 10px 15px 20px; */
+        border-radius: 50%;
+
+    }
+</style>
+<body>
+    <h1 id="simple">ez egy szimpla selector</h1>
+    <div id="combinator">
+        <h1>combinator selector</h1>
+        <div>
+            <h1>combinator selector 2</h1>
+        </div>
+    </div>
+    <a id="pseudoclass" href="">pseudo class</a>
+    <span id="pseudoelement">pseudo element</span>
+    <div title="valami">attribute selector</div>
+    <div title="attr">attribute selector</div>
+    <div>
+        <div class="ilyen2">ilyen2</div>
+    </div>
+    <div class="ilyen">valami2</div>
+    <div id="picture"></div>
+    <div id="borders">borders</div>
+</body>
+</html>

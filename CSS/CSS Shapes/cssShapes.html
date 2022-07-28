@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #negyzet {
+      width: 300px;
+      height: 300px;
+      background-color: blue;
+    }
+    #kor {
+      margin-top: 10px;
+      width: 150px;
+      height: 150px;
+      background-color: blue;
+      border-radius: 75px; /* ez lehet 50% is */
+    }
+    #kor2 {
+      margin-top: 10px;
+      width: 150px;
+      height: 150px;
+      background-color: blue;
+      border-radius: 75px 75px 30px 75px;
+    }
+    #kor3 {
+      margin-top: 10px;
+      width: 150px;
+      height: 150px;
+      background-color: blue;
+      border-radius: 5px 75px 45px 175px;
+    }
+    #kor4 {
+      margin-top: 10px;
+      width: 150px;
+      height: 150px;
+      background-color: blue;
+      border-radius: 5px 175px;
+    }
+    #level {
+      position: relative;
+      margin-top: 10px;
+      width: 150px;
+      height: 150px;
+      background-color: green;
+      border-radius: 100px 0px;
+    }
+    #levelEr {
+      position: absolute;
+      top: -54px;
+      left: -82px;
+      width: 209px;
+      height: 150px;
+      border-bottom: 2px solid black;
+      transform: rotate(-45deg);
+    }
+    #haromszog {
+      margin-top: 10px;
+      width: 0px;
+      height: 0px;
+      border-bottom: 150px solid gold;
+      border-left: 75px solid transparent;
+      border-right: 75px solid transparent;
+    }
+    #haromszog2 {
+      margin-top: 10px;
+      width: 0px;
+      height: 0px;
+      border-top: 150px solid gold;
+      border-left: 75px solid transparent;
+      border-right: 75px solid transparent;
+    }
+    #haromszog3 {
+      margin-top: 10px;
+      width: 0px;
+      height: 0px;
+      border-bottom: 75px solid transparent;
+      border-left: 150px solid gold;
+      border-top: 75px solid transparent;
+    }
+    #haromszog4 {
+      margin-top: 10px;
+      width: 0px;
+      height: 0px;
+      border-bottom: 75px solid transparent;
+      border-right: 150px solid gold;
+      border-top: 75px solid transparent;
+    }
+    #haromszog5 {
+      margin-top: 10px;
+      width: 0px;
+      height: 0px;
+      border-top: 100px solid violet;
+      border-right: 100px solid transparent;
+    }
+    #haromszog6 {
+      margin-top: 10px;
+      width: 0px;
+      height: 0px;
+      border-bottom: 100px solid violet;
+      border-right: 100px solid transparent;
+    }
+    #haromszog7 {
+      margin-top: 10px;
+      width: 0px;
+      height: 0px;
+      border-top: 100px solid violet;
+      border-left: 100px solid transparent;
+    }
+    #haromszog8 {
+      margin-top: 10px;
+      width: 0px;
+      height: 0px;
+      border-bottom: 100px solid violet;
+      border-left: 100px solid transparent;
+    }
+    #trapez {
+      margin-top: 10px;
+      width: 100px;
+      height: 0px;
+      border-bottom: 100px solid chartreuse;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+    }
+    #paralelogramma {
+      margin-top: 10px;
+      width: 200px;
+      height: 130px;
+      background-color: bisque;
+      transform: skew(-20deg);
+      margin-left: 30px;
+    }
+    #boritek {
+      margin-top: 10px;
+      width: 150px;
+      height: 0px;
+      border-top: 150px solid green;
+      border-left: 150px solid brown;
+      border-right: 150px solid blue;
+      border-bottom: 150px solid yellow;
+    }
+    #zaszlo {
+      margin-top: 10px;
+      width: 150px;
+      height: 0px;
+      border-top: 150px solid green;
+      border-left: 150px solid green;
+      border-right: 150px solid transparent;
+      border-bottom: 150px solid green;
+    }
+    #nuclear {
+      margin-top: 10px;
+      width: 0px;
+      height: 0px;
+      border-radius: 150px;
+      border-top: 150px solid yellow;
+      border-left: 150px solid black;
+      border-right: 150px solid black;
+      border-bottom: 150px solid yellow;
+      transform: rotate(90deg);
+    }
+    #pacman {
+      display: inline-block;
+      width: 0px;
+      height: 0px;
+      border-top: 150px solid yellow;
+      border-left: 150px solid yellow;
+      border-right: 150px solid transparent;
+      border-bottom: 150px solid yellow;
+      border-radius: 150px;
+    }
+    .burger {
+      display: inline-block;
+      position: relative;
+      bottom: 150px;
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+      border-radius: 10px;
+      background-color: orange;
+    }
+    #davidcsill {
+      position: relative;
+      margin-left: 20px;
+      margin-top: 10px;
+      width: 0px;
+      height: 0px;
+      border-left: 75px solid transparent;
+      border-right: 75px solid transparent;
+      border-bottom: 150px solid yellow;
+    }
+    #davidcsill::after {
+      content: "";
+      position: absolute;
+      top: 42px;
+      left: -75px;
+      border-top: 150px solid yellow;
+      border-left: 75px solid transparent;
+      border-right: 75px solid transparent;
+    }
+    #spaceinvaders {
+      position: relative;
+      left: 30px;
+      box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 0.5em red,
+        2.5em 1.5em 0 0.5em red, -3em -3em 0 0 red, 3em -3em 0 0 red,
+        -2em -2em 0 0 red, 2em -2em 0 0 red, -3em -1em 0 0 red,
+        -2em -1em 0 0 red, 2em -1em 0 0 red, 3em -1em 0 0 red, -4em 0 0 0 red,
+        -3em 0 0 0 red, 3em 0 0 0 red, 4em 0 0 0 red, -5em 1em 0 0 red,
+        -4em 1em 0 0 red, 4em 1em 0 0 red, 5em 1em 0 0 red, -5em 2em 0 0 red,
+        5em 2em 0 0 red, -5em 3em 0 0 red, -3em 3em 0 0 red, 3em 3em 0 0 red,
+        5em 3em 0 0 red, -2em 4em 0 0 red, -1em 4em 0 0 red, 1em 4em 0 0 red,
+        2em 4em 0 0 red;
+      background: red;
+      width: 1em;
+      height: 1em;
+      overflow: hidden;
+      margin: 50px 0 70px 65px;
+      margin-top: 100px;
+    }
+  </style>
+  <body>
+    <div id="negyzet"></div>
+    <div id="kor"></div>
+    <div id="kor2"></div>
+    <div id="kor3"></div>
+    <div id="kor4"></div>
+    <div id="level">
+      <div id="levelEr"></div>
+    </div>
+    <div id="haromszog"></div>
+    <div id="haromszog2"></div>
+    <div id="haromszog3"></div>
+    <div id="haromszog4"></div>
+    <div id="haromszog5"></div>
+    <div id="haromszog6"></div>
+    <div id="haromszog7"></div>
+    <div id="haromszog8"></div>
+    <div id="trapez"></div>
+    <div id="paralelogramma"></div>
+    <div id="boritek"></div>
+    <div id="zaszlo"></div>
+    <div id="nuclear"></div>
+    <div id="pacmanc">
+      <div id="pacman"></div>
+      <div class="burger"></div>
+      <div class="burger"></div>
+      <div class="burger"></div>
+    </div>
+    <div id="davidcsill"></div>
+    <div id="spaceinvaders"></div>
+  </body>
+</html>
