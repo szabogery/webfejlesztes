@@ -1,104 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
+  </head>
+  <style>
     #simple {
-        background-color: red;
+      background-color: red;
     }
     #combinator > h1 {
-        background-color: blue;
+      background-color: blue;
     }
     #combinator div h1 {
-        background-color: burlywood;
+      background-color: burlywood;
     }
     #pseudoclass {
-        color: yellow;
+      color: yellow;
     }
     #pseudoclass:hover {
-        color: aqua;
+      color: aqua;
     }
     #pseudoclass:visited {
-        color: brown;
+      color: brown;
     }
     #pseudoelement {
-        display: block;
-        position: relative;
-        margin-top: 10px;
+      display: block;
+      position: relative;
+      margin-top: 10px;
     }
     #pseudoelement::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 10px;
-        height: 10px;
-        background-color: coral;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: coral;
     }
     div[title] {
-        color: blueviolet;
+      color: blueviolet;
     }
     div[title="attr"] {
-        color: yellowgreen;
+      color: yellowgreen;
     }
     div.ilyen {
-        border: 1px solid chocolate;
+      border: 1px solid chocolate;
     }
     div .ilyen2 {
-        color: darkgrey;
+      color: darkgrey;
     }
     #picture {
-        height: 100px;
-        width: 100px;
-        margin-top: 20px;
-        /* border: 1px solid black; */  /* shorthand */
-        border-width: 1px;
-        border-style: solid;
-        border-color: black;
-        /* background-image: url(./img/cica.jpg);  
+      height: 100px;
+      width: 100px;
+      margin-top: 20px;
+      /* border: 1px solid black; */ /* shorthand */
+      border-width: 1px;
+      border-style: solid;
+      border-color: black;
+      /* background-image: url(./img/cica.jpg);  
         background-size: contain;
         background-repeat: no-repeat; */
-        background: url(./img/mute.png) no-repeat right bottom; /* shorthand */
+      background: url(./img/mute.png) no-repeat right bottom; /* shorthand */
     }
     #borders {
-        width: 500px;
-        height: 250px;
-        margin-top: 10px;
-        border-top: 3px dotted black;
-        border-right: 3px dashed red;
-        border-bottom: 3px double blue;
-        border-left: 3px groove green;
-        /* border-radius: 8px; */
-        /* border-bottom-left-radius: 6px;
+      width: 500px;
+      height: 250px;
+      margin-top: 10px;
+      border-top: 3px dotted black;
+      border-right: 3px dashed red;
+      border-bottom: 3px double blue;
+      border-left: 3px groove green;
+      /* border-radius: 8px; */
+      /* border-bottom-left-radius: 6px;
         border-top-left-radius: 9px;
         border-bottom-right-radius: 11px;
         border-top-right-radius: 17px; */
-        /* border-radius: 5px 10px 15px 20px; */
-        border-radius: 50%;
-
+      /* border-radius: 5px 10px 15px 20px; */
+      border-radius: 50%;
     }
-</style>
-<body>
+    #orokles {
+      margin-left: 20px;
+      background-color: bisque;
+    }
+    #orokles span {
+      display: inline-block;
+      margin-left: inherit;
+      background-color: yellow;
+    }
+    #margin {
+      height: 50px;
+      width: 100px;
+      /* margin: 0 auto; */
+      /* margin: 25px 50px 75px; */ /* margin-top: 25px, left&right: 50px, margin-bottom: 75px  */
+      /* margin: 25px 50px; */ /* margin-top&bottom: 25px, left&right: 50px*/
+      margin: 10px 20px 30px 40px;
+      background-color: violet;
+    }
+    #marginCollapse {
+        height: 100px;
+        width: 150px;
+        margin-top: 20px;
+        background-color: blue;
+    }
+    #marginCollapse div {
+        margin-top: 20px;
+        background-color: brown;
+    }
+    #padding {
+        height: 100px;
+        width: 150px;
+        background-color: bisque;
+        padding: 50px;
+        padding: 50px 70px;
+        padding: 50px 70px 90px;
+        padding: 50px 70px 90px 70px;
+    }
+    #padding span{
+        border: 3px solid black;
+        padding: 20px;
+    }
+    #width {
+        position: relative;
+        height: fit-content;
+        width: fit-content;
+        /* min-width: 300px;
+        max-width: 600px; */
+        background-color: blue;
+    }
+    #width span {
+        display: inline;
+        height: 50px;
+        background-color: blanchedalmond;
+    }
+    #outline {
+        width: 150px;
+        height: 200px;
+        margin: 30px 40px;
+        border: 2px solid blue;
+        background-color: brown;
+        outline-width: 20px;
+        outline-style: dotted;
+        outline-color: yellow;
+        outline: 10px dashed grey;
+        outline-offset: 10px;
+    }
+    #text {
+        padding: 20px 5px;
+        border: 2px solid black;
+        margin-top: 20px;
+    }
+    #text h1 {
+        letter-spacing: 2px;
+        text-transform: lowercase;
+        text-transform: capitalize;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    #text span {
+        display: inline-block;
+    }
+    #text span:first-of-type {
+        color: aqua;
+        background-color: blueviolet;
+    }
+    #text span:nth-of-type(2) {
+        text-decoration-line: overline;
+        text-decoration-line: line-through;
+        text-decoration-line: underline;
+        text-decoration-line: overline line-through underline;
+        text-decoration-color: blue;
+        text-decoration: dashed line-through brown;
+    }
+    #text span:nth-of-type(3) {
+        line-height: 10px;
+        text-indent: 50px;/* bekezdés!! */
+        word-spacing: 10px;
+    }
+    #text span:nth-of-type(4) {
+        text-shadow: 2px 2px 5px red;
+        text-shadow: 0 0 9px #ff0000, 0 0 5px #0000ff;
+    }
+    #whiteSpace p {
+        white-space: nowrap;
+    }
+  </style>
+  <body>
     <h1 id="simple">ez egy szimpla selector</h1>
     <div id="combinator">
-        <h1>combinator selector</h1>
-        <div>
-            <h1>combinator selector 2</h1>
-        </div>
+      <h1>combinator selector</h1>
+      <div>
+        <h1>combinator selector 2</h1>
+      </div>
     </div>
     <a id="pseudoclass" href="">pseudo class</a>
     <span id="pseudoelement">pseudo element</span>
     <div title="valami">attribute selector</div>
     <div title="attr">attribute selector</div>
     <div>
-        <div class="ilyen2">ilyen2</div>
+      <div class="ilyen2">ilyen2</div>
     </div>
     <div class="ilyen">valami2</div>
     <div id="picture"></div>
     <div id="borders">borders</div>
-</body>
+    <div id="orokles">
+      <span>öröklés</span>
+    </div>
+    <div id="margin">margin</div>
+    <div id="marginCollapse">
+        <div>marginCollapse</div>
+    </div>
+    <div id="padding">
+        <span>padding</span>
+    </div>
+    <div id="width">
+        <span>widthwidthwidthwidthwidthwidth</span>
+        <span>widthwidthwidthwidthwidthwidth</span>
+        <span>widthwidthwidthwidthwidthwidth</span>
+    </div>
+    <div id="outline"></div>
+    <div id="text">
+        <h1>Ez egy szuper cím</h1>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+        <span>Earum reiciendis rem odit totam soluta nihil fuga aliquid velit sequi </span>
+        <span>aperiam eaque architecto laudantium facilis,</span>
+        <span> rerum unde voluptates a repellat voluptatum?</span>
+    </div>
+    <div id="whiteSpace">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae fuga quisquam voluptatum quasi quibusdam est odit deleniti repellat perspiciatis enim expedita, ipsam ab doloribus illo tenetur nisi, facere animi velit.</p>
+    </div>
+  </body>
 </html>
