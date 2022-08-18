@@ -99,91 +99,265 @@
       background-color: violet;
     }
     #marginCollapse {
-        height: 100px;
-        width: 150px;
-        margin-top: 20px;
-        background-color: blue;
+      height: 100px;
+      width: 150px;
+      margin-top: 20px;
+      background-color: blue;
     }
     #marginCollapse div {
-        margin-top: 20px;
-        background-color: brown;
+      margin-top: 20px;
+      background-color: brown;
     }
     #padding {
-        height: 100px;
-        width: 150px;
-        background-color: bisque;
-        padding: 50px;
-        padding: 50px 70px;
-        padding: 50px 70px 90px;
-        padding: 50px 70px 90px 70px;
+      height: 100px;
+      width: 150px;
+      background-color: bisque;
+      padding: 50px;
+      padding: 50px 70px;
+      padding: 50px 70px 90px;
+      padding: 50px 70px 90px 70px;
     }
-    #padding span{
-        border: 3px solid black;
-        padding: 20px;
+    #padding span {
+      border: 3px solid black;
+      padding: 20px;
     }
     #width {
-        position: relative;
-        height: fit-content;
-        width: fit-content;
-        /* min-width: 300px;
+      position: relative;
+      height: fit-content;
+      width: fit-content;
+      /* min-width: 300px;
         max-width: 600px; */
-        background-color: blue;
+      background-color: blue;
     }
     #width span {
-        display: inline;
-        height: 50px;
-        background-color: blanchedalmond;
+      display: inline;
+      height: 50px;
+      background-color: blanchedalmond;
     }
     #outline {
-        width: 150px;
-        height: 200px;
-        margin: 30px 40px;
-        border: 2px solid blue;
-        background-color: brown;
-        outline-width: 20px;
-        outline-style: dotted;
-        outline-color: yellow;
-        outline: 10px dashed grey;
-        outline-offset: 10px;
+      width: 150px;
+      height: 200px;
+      margin: 30px 40px;
+      border: 2px solid blue;
+      background-color: brown;
+      outline-width: 20px;
+      outline-style: dotted;
+      outline-color: yellow;
+      outline: 10px dashed grey;
+      outline-offset: 10px;
     }
     #text {
-        padding: 20px 5px;
-        border: 2px solid black;
-        margin-top: 20px;
+      padding: 20px 5px;
+      border: 2px solid black;
+      margin-top: 20px;
     }
     #text h1 {
-        letter-spacing: 2px;
-        text-transform: lowercase;
-        text-transform: capitalize;
-        text-transform: uppercase;
-        text-align: center;
+      letter-spacing: 2px;
+      text-transform: lowercase;
+      text-transform: capitalize;
+      text-transform: uppercase;
+      text-align: center;
     }
     #text span {
-        display: inline-block;
+      display: inline-block;
     }
     #text span:first-of-type {
-        color: aqua;
-        background-color: blueviolet;
+      color: aqua;
+      background-color: blueviolet;
     }
     #text span:nth-of-type(2) {
-        text-decoration-line: overline;
-        text-decoration-line: line-through;
-        text-decoration-line: underline;
-        text-decoration-line: overline line-through underline;
-        text-decoration-color: blue;
-        text-decoration: dashed line-through brown;
+      text-decoration-line: overline;
+      text-decoration-line: line-through;
+      text-decoration-line: underline;
+      text-decoration-line: overline line-through underline;
+      text-decoration-color: blue;
+      text-decoration: dashed line-through brown;
     }
     #text span:nth-of-type(3) {
-        line-height: 10px;
-        text-indent: 50px;/* bekezdés!! */
-        word-spacing: 10px;
+      line-height: 10px;
+      text-indent: 50px; /* bekezdés!! */
+      word-spacing: 10px;
     }
     #text span:nth-of-type(4) {
-        text-shadow: 2px 2px 5px red;
-        text-shadow: 0 0 9px #ff0000, 0 0 5px #0000ff;
+      text-shadow: 2px 2px 5px red;
+      text-shadow: 0 0 9px #ff0000, 0 0 5px #0000ff;
     }
     #whiteSpace p {
-        white-space: nowrap;
+      white-space: nowrap;
+    }
+    .display {
+      width: 100px;
+      height: 100px;
+    }
+    #display1 {
+      display: block;
+      background-color: #0000ff;
+    }
+    #display2 {
+      display: none;
+      background-color: #ff0000;
+    }
+    #display3 {
+      visibility: hidden;
+      background-color: aliceblue;
+    }
+    #display4 {
+      background-color: darkgray;
+    }
+    #display5 {
+      display: inline;
+      margin-right: 5px;
+      background-color: beige;
+    }
+    #display6 {
+      display: inline;
+      margin-right: 5px;
+      background-color: olive;
+    }
+    #display7 {
+      display: inline;
+      background-color: orange;
+    }
+    #display8 {
+      display: inline-block;
+      margin-right: 5px;
+      background-color: beige;
+    }
+    #display9 {
+      display: inline-block;
+      margin-right: 5px;
+      background-color: olive;
+    }
+    #display10 {
+      display: inline-block;
+      background-color: orange;
+    }
+    #display11 {
+      display: inline-flex;
+    }
+    #display11 div {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      color: #fff;
+      margin-right: 5px;
+    }
+    #display12 {
+      display: flex;
+      flex-direction: column; /* column=x tengely, row=y tengely */ /* row reverse= visszafelé column reverse=visszafelé */
+    }
+    #display12 div {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+    #position1 {
+      border: 1px solid black;
+      position: relative;
+      width: 500px;
+      height: 500px;
+    }
+    #position1 #p1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background-color: #ff0000;
+    }
+    #position1 #p2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      background-color: #0000ff;
+    }
+    #position1 #p3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: brown;
+    }
+    #position2 {
+      border: 1px solid black;
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background-color: #fff;
+    }
+    #position2 #p1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background-color: #ff0000;
+      z-index: 100;
+    }
+    #position2 #p2 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 100px;
+      height: 100px;
+      background-color: #0000ff;
+      z-index: 80;
+    }
+    #position2 #p3 {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: brown;
+      z-index: 50;
+    }
+    #position3 {
+      position: sticky;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+    }
+    #position4 {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: olivedrab;
+      z-index: 90;/* csak "position"-el rendelkezővel működik */
+    }
+    #overflow {
+      width: 300px;
+      height: 200px;
+      border: 1px solid black;
+      /* overflow: hidden; */
+      overflow-x: scroll;
+    }
+    #overflow div {
+      width: 400px;
+      height: 100px;
+      border: 1px solid red;
+
+    }
+    #overflow2 {
+      width: 150px;
+      height: 200px;
+      border: 1px solid black;
+      /* overflow: hidden; */
+      overflow-y: scroll;
+    }
+    #overflow2 div {
+      width: 100px;
+      height: 300px;
+      border: 1px solid red;
+
     }
   </style>
   <body>
@@ -209,26 +383,99 @@
     </div>
     <div id="margin">margin</div>
     <div id="marginCollapse">
-        <div>marginCollapse</div>
+      <div>marginCollapse</div>
     </div>
     <div id="padding">
-        <span>padding</span>
+      <span>padding</span>
     </div>
     <div id="width">
-        <span>widthwidthwidthwidthwidthwidth</span>
-        <span>widthwidthwidthwidthwidthwidth</span>
-        <span>widthwidthwidthwidthwidthwidth</span>
+      <span>widthwidthwidthwidthwidthwidth</span>
+      <span>widthwidthwidthwidthwidthwidth</span>
+      <span>widthwidthwidthwidthwidthwidth</span>
     </div>
     <div id="outline"></div>
     <div id="text">
-        <h1>Ez egy szuper cím</h1>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
-        <span>Earum reiciendis rem odit totam soluta nihil fuga aliquid velit sequi </span>
-        <span>aperiam eaque architecto laudantium facilis,</span>
-        <span> rerum unde voluptates a repellat voluptatum?</span>
+      <h1>Ez egy szuper cím</h1>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+      <span
+        >Earum reiciendis rem odit totam soluta nihil fuga aliquid velit sequi
+      </span>
+      <span>aperiam eaque architecto laudantium facilis,</span>
+      <span> rerum unde voluptates a repellat voluptatum?</span>
     </div>
     <div id="whiteSpace">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae fuga quisquam voluptatum quasi quibusdam est odit deleniti repellat perspiciatis enim expedita, ipsam ab doloribus illo tenetur nisi, facere animi velit.</p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae fuga
+        quisquam voluptatum quasi quibusdam est odit deleniti repellat
+        perspiciatis enim expedita, ipsam ab doloribus illo tenetur nisi, facere
+        animi velit.
+      </p>
+    </div>
+    <div id="display1" class="display">block</div>
+    <div id="display2" class="display">none</div>
+    <div id="display3" class="display">hidden</div>
+    <div id="display4" class="display">close</div>
+    <div id="display5" class="display">inline</div>
+    <div id="display6" class="display">inline</div>
+    <div id="display7" class="display">inline</div>
+    <div id="display8" class="display">inline-block</div>
+    <div id="display9" class="display">inline-block</div>
+    <div id="display10" class="display">inline-block</div>
+    <br />
+    <div id="display11">
+      <div>inlineflex</div>
+      <div>inlineflex</div>
+      <div>inlineflex</div>
+    </div>
+    <div id="display12">
+      <div>flex1</div>
+      <div>flex2</div>
+      <div>flex3</div>
+    </div>
+    <div id="position1">
+      <div id="p1">absolute</div>
+      <div id="p2">absolute</div>
+      <div id="p3">absolute</div>
+    </div>
+    <div id="position2">
+      <div id="p1">absolute</div>
+      <div id="p2">absolute</div>
+      <div id="p3">absolute</div>
+    </div>
+    <div id="position3">sticky</div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sequi deleniti fuga quidem accusamus hic eos quia quos, quam autem distinctio velit odit ducimus enim ex consectetur ipsam praesentium molestiae.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi minima voluptate amet sint. Mollitia, tempora dignissimos doloremque pariatur nisi quis et provident, laboriosam suscipit ipsam, maiores repudiandae dolores sequi ducimus.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, iure! Harum minima tempora voluptas expedita iure incidunt dolorum quisquam dolorem quo repellat eos eaque quod quos, dolore impedit tempore quibusdam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, labore voluptas cupiditate iusto amet deserunt. Officia, ratione adipisci ullam eum, consequatur dignissimos cum quia laudantium vel, iusto atque consequuntur quam.
+    <div id="position4">fixed</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="overflow">
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt iste quo, nisi unde obcaecati consectetur cumque odit qui maxime molestiae corporis autem sapiente! Labore sed itaque totam temporibus voluptate?</div>
+    </div>
+    <div id="overflow2">
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt iste quo, nisi unde obcaecati consectetur cumque odit qui maxime molestiae corporis autem sapiente! Labore sed itaque totam temporibus voluptate?</div>
     </div>
   </body>
 </html>
