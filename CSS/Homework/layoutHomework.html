@@ -13,19 +13,29 @@
       background-color: beige;
       font-family: Georgia, "Times New Roman", Times, serif;
       text-align: center;
-      padding: 5px;
+      padding: 6px;
       margin: 5px;
     }
     #mainContainer {
-        background-color: cadetblue;
+      width: auto;
+      height: auto;
+      background-color: cadetblue;
     }
     #header {
       width: 98%;
       height: 50px;
     }
     #navigation {
+      display: flex;
+      flex-direction: row;
+      position: sticky;
+      top: 0.1%;
       width: 98%;
       height: 40px;
+    }
+    #navigation div {
+        width: 24%;
+        height: auto;
     }
     #columnContainers {
       display: flex;
@@ -35,14 +45,17 @@
     #LeftColumn {
       width: 24.5%;
       height: 300px;
+      overflow-y: scroll;
     }
     #MidColumn {
       width: 49%;
       height: 300px;
+      overflow-y: scroll;
     }
     #RightColumn {
       width: 24.5%;
       height: 300px;
+      overflow-y: scroll;
     }
     #footer {
       width: 98%;
@@ -51,14 +64,62 @@
   </style>
   <body>
     <div id="mainContainer">
-      <div id="header">Header</div>
-      <div id="navigation">Navigation</div>
+      <div id="header">
+        <h1>Header</h1>
+      </div>
+      <div id="navigation">
+        <div>Menu</div>
+        <div>Information</div>
+        <div>Marketplace</div>
+        <div>About us</div>
+      </div>
       <div id="columnContainers">
-        <div id="LeftColumn">LeftColumn</div>
-        <div id="MidColumn">MidColumn</div>
-        <div id="RightColumn">RightColumn</div>
+        <div id="LeftColumn">
+            <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure culpa in eveniet ab voluptatibus suscipit. Sapiente maiores doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti perspiciatis architecto nam animi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure culpa in eveniet ab voluptatibus suscipit. Sapiente maiores doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti perspiciatis architecto nam animi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure culpa in eveniet ab voluptatibus suscipit. Sapiente maiores doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti perspiciatis architecto nam animi!
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum consectetur nobis, deleniti iste labore, accusamus repudiandae at laborum quidem maxime fugiat expedita sunt soluta? Praesentium atque vel est ipsam corrupti?
+            </span>
+        </div>
+        <div id="MidColumn">
+            <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure culpa in eveniet ab voluptatibus suscipit. Sapiente maiores doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti perspiciatis architecto nam animi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure culpa in eveniet ab voluptatibus suscipit. Sapiente maiores doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti perspiciatis architecto nam animi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure culpa in eveniet ab voluptatibus suscipit. Sapiente maiores doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti perspiciatis architecto nam animi!
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure culpa in eveniet ab voluptatibus suscipit. Sapiente maiores doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti perspiciatis architecto nam animi!
+            </span>
+        </div>
+        <div id="RightColumn">
+            <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure culpa in eveniet ab voluptatibus suscipit. Sapiente maiores doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti perspiciatis architecto nam animi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure culpa in eveniet ab voluptatibus suscipit. Sapiente maiores doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti perspiciatis architecto nam animi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure culpa in eveniet ab voluptatibus suscipit. Sapiente maiores doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti perspiciatis architecto nam animi!
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci non rem corporis reiciendis laudantium amet praesentium eius nisi repellat ea itaque deleniti ad eveniet odio odit, veritatis magni nulla vitae.
+            </span>
+        </div>
       </div>
       <div id="footer">Footer</div>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </body>
 </html>
