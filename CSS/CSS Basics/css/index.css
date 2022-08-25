@@ -1,0 +1,376 @@
+@font-face {
+  font-family: kisgeci;
+  src: url(../fonts/font1.ttf);
+}
+html {
+  font-size: 18px;
+}
+#simple {
+  background-color: red;
+}
+#combinator > h1 {
+  background-color: blue;
+}
+#combinator div h1 {
+  background-color: burlywood;
+}
+#pseudoclass {
+  color: yellow;
+}
+#pseudoclass:hover {
+  color: aqua;
+}
+#pseudoclass:visited {
+  color: brown;
+}
+#pseudoelement {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+}
+#pseudoelement::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: coral;
+}
+div[title] {
+  color: blueviolet;
+}
+div[title="attr"] {
+  color: yellowgreen;
+}
+div.ilyen {
+  border: 1px solid chocolate;
+}
+div .ilyen2 {
+  color: darkgrey;
+}
+#picture {
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+  /* border: 1px solid black; */ /* shorthand */
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  /* background-image: url(./img/cica.jpg);  
+      background-size: contain;
+      background-repeat: no-repeat; */
+  background: url(./img/mute.png) no-repeat right bottom; /* shorthand */
+}
+#borders {
+  width: 500px;
+  height: 250px;
+  margin-top: 10px;
+  border-top: 3px dotted black;
+  border-right: 3px dashed red;
+  border-bottom: 3px double blue;
+  border-left: 3px groove green;
+  /* border-radius: 8px; */
+  /* border-bottom-left-radius: 6px;
+      border-top-left-radius: 9px;
+      border-bottom-right-radius: 11px;
+      border-top-right-radius: 17px; */
+  /* border-radius: 5px 10px 15px 20px; */
+  border-radius: 50%;
+}
+#orokles {
+  margin-left: 20px;
+  background-color: bisque;
+}
+#orokles span {
+  display: inline-block;
+  margin-left: inherit;
+  background-color: yellow;
+}
+#margin {
+  height: 50px;
+  width: 100px;
+  /* margin: 0 auto; */
+  /* margin: 25px 50px 75px; */ /* margin-top: 25px, left&right: 50px, margin-bottom: 75px  */
+  /* margin: 25px 50px; */ /* margin-top&bottom: 25px, left&right: 50px*/
+  margin: 10px 20px 30px 40px;
+  background-color: violet;
+}
+#marginCollapse {
+  height: 100px;
+  width: 150px;
+  margin-top: 20px;
+  background-color: blue;
+}
+#marginCollapse div {
+  margin-top: 20px;
+  background-color: brown;
+}
+#padding {
+  height: 100px;
+  width: 150px;
+  background-color: bisque;
+  padding: 50px;
+  padding: 50px 70px;
+  padding: 50px 70px 90px;
+  padding: 50px 70px 90px 70px;
+}
+#padding span {
+  border: 3px solid black;
+  padding: 20px;
+}
+#width {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  /* min-width: 300px;
+      max-width: 600px; */
+  background-color: blue;
+}
+#width span {
+  display: inline;
+  height: 50px;
+  background-color: blanchedalmond;
+}
+#outline {
+  width: 150px;
+  height: 200px;
+  margin: 30px 40px;
+  border: 2px solid blue;
+  background-color: brown;
+  outline-width: 20px;
+  outline-style: dotted;
+  outline-color: yellow;
+  outline: 10px dashed grey;
+  outline-offset: 10px;
+}
+#text {
+  padding: 20px 5px;
+  border: 2px solid black;
+  margin-top: 20px;
+}
+#text h1 {
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  text-transform: capitalize;
+  text-transform: uppercase;
+  text-align: center;
+}
+#text span {
+  display: inline-block;
+}
+#text span:first-of-type {
+  color: aqua;
+  background-color: blueviolet;
+}
+#text span:nth-of-type(2) {
+  text-decoration-line: overline;
+  text-decoration-line: line-through;
+  text-decoration-line: underline;
+  text-decoration-line: overline line-through underline;
+  text-decoration-color: blue;
+  text-decoration: dashed line-through brown;
+}
+#text span:nth-of-type(3) {
+  line-height: 10px;
+  text-indent: 50px; /* bekezdés!! */
+  word-spacing: 10px;
+}
+#text span:nth-of-type(4) {
+  text-shadow: 2px 2px 5px red;
+  text-shadow: 0 0 9px #ff0000, 0 0 5px #0000ff;
+}
+#whiteSpace p {
+  white-space: nowrap;
+}
+.display {
+  width: 100px;
+  height: 100px;
+}
+#display1 {
+  display: block;
+  background-color: #0000ff;
+}
+#display2 {
+  display: none;
+  background-color: #ff0000;
+}
+#display3 {
+  visibility: hidden;
+  background-color: aliceblue;
+}
+#display4 {
+  background-color: darkgray;
+}
+#display5 {
+  display: inline;
+  margin-right: 5px;
+  background-color: beige;
+}
+#display6 {
+  display: inline;
+  margin-right: 5px;
+  background-color: olive;
+}
+#display7 {
+  display: inline;
+  background-color: orange;
+}
+#display8 {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: beige;
+}
+#display9 {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: olive;
+}
+#display10 {
+  display: inline-block;
+  background-color: orange;
+}
+#display11 {
+  display: inline-flex;
+}
+#display11 div {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: #fff;
+  margin-right: 5px;
+}
+#display12 {
+  display: flex;
+  flex-direction: column; /* column=x tengely, row=y tengely */ /* row reverse= visszafelé column reverse=visszafelé */
+}
+#display12 div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+#position1 {
+  border: 1px solid black;
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+#position1 #p1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+}
+#position1 #p2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+}
+#position1 #p3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+}
+#position2 {
+  border: 1px solid black;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+}
+#position2 #p1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  z-index: 100;
+}
+#position2 #p2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+  z-index: 80;
+}
+#position2 #p3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  z-index: 50;
+}
+#position3 {
+  position: sticky;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+#position4 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: olivedrab;
+  z-index: 90; /* csak "position"-el rendelkezővel működik */
+}
+#overflow {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  /* overflow: hidden; */
+  overflow-x: scroll;
+}
+#overflow div {
+  width: 400px;
+  height: 100px;
+  border: 1px solid red;
+}
+#overflow2 {
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+  /* overflow: hidden; */
+  overflow-y: scroll;
+}
+#overflow2 div {
+  width: 100px;
+  height: 300px;
+  border: 1px solid red;
+}
+#pixel {
+  display: block;
+  font-size: 18px;
+}
+#rem {
+  display: block;
+  font-size: 2rem;
+}
+#vw {
+  display: block;
+  font-size: 5vw !important;
+}
+#googleFont {
+  font-family: "Roboto", sans-serif;
+}
+#kisgeci {
+  display: block;
+  font-family: kisgeci;
+}
