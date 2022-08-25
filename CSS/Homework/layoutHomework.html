@@ -13,67 +13,106 @@
       background-color: beige;
       font-family: Georgia, "Times New Roman", Times, serif;
       text-align: center;
-      padding: 6px;
+      padding: 5px;
       margin: 5px;
     }
     #mainContainer {
-      width: auto;
+      width: 100%;
       height: auto;
-      background-color: rgb(0, 9, 9);
+      border-radius: 0px;
+      padding: 0px;
+      margin: 0px;
     }
     #header {
-      width: 98%;
+      width: auto;
       height: 70px;
-      background-color: #a52a2a;
+      background-color: red;
     }
     #header h1 {
-        color: beige;
+      color: beige;
     }
     #navigation {
       display: flex;
       flex-direction: row;
       position: sticky;
       top: 0.1%;
-      width: 98%;
+      width: auto;
       height: 40px;
+      background-color: red;
     }
     #navigation div {
-      width: 24%;
+      width: 25%;
       height: auto;
     }
     #navigation a {
       text-decoration: none;
-      color: #a52a2a;
-      transition: color 0.3s ease-in;
+      color: black;
+      transition: color 0.5s ease-in;
     }
     #navigation a:hover {
-      color: #7fff00;
+      color: red;
       text-decoration: none;
     }
-    #columnContainers {
+    #columnContainer {
       display: flex;
       flex-direction: row;
-      background-color: beige;
+      background-color: red;
     }
     #LeftColumn {
-      width: 24.5%;
-      height: 1000px;
+      width: 25%;
+      height: 700px;
       overflow-y: scroll;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 100%
+      );
+    }
+    #LeftColumn div {
+      width: auto;
+      height: 10%;
     }
     #MidColumn {
-      width: 49%;
-      height: 1000px;
+      width: 50%;
+      height: 700px;
       overflow-y: scroll;
     }
     #RightColumn {
-      width: 24.5%;
-      height: 1000px;
+      width: 25%;
+      height: 700px;
       overflow-y: scroll;
     }
+    #DoubleColumnContaner {
+      display: flex;
+      flex-direction: row;
+      background-color: red;
+    }
+    #DoubleColumnContaner div {
+      width: 50%;
+      height: 500px;
+    }
+    #informationBar {
+      width: auto;
+      height: 25px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 100%
+      );
+    }
+    #tripleColumnContainer {
+      display: flex;
+      flex-direction: row;
+      background-color: red;
+    }
+    #tripleColumnContainer div {
+      width: 33.33%;
+      height: 500px;
+    }
     #footer {
-      width: 98%;
+      width: auto;
       height: 50px;
-      background-color: #a52a2a;
+      background-color: red;
     }
   </style>
   <body>
@@ -103,52 +142,17 @@
           </nav>
         </div>
       </div>
-      <div id="columnContainers">
+      <div id="columnContainer">
         <div id="LeftColumn">
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure
-            culpa in eveniet ab voluptatibus suscipit. Sapiente maiores
-            doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti
-            perspiciatis architecto nam animi! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Rem iure culpa in eveniet ab
-            voluptatibus suscipit. Sapiente maiores doloribus harum, cupiditate,
-            ratione repellat, culpa ipsum corrupti perspiciatis architecto nam
-            animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-            iure culpa in eveniet ab voluptatibus suscipit. Sapiente maiores
-            doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti
-            perspiciatis architecto nam animi! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Nostrum consectetur nobis, deleniti
-            iste labore, accusamus repudiandae at laborum quidem maxime fugiat
-            expedita sunt soluta? Praesentium atque vel est ipsam corrupti?Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Rem iure culpa in
-            eveniet ab voluptatibus suscipit. Sapiente maiores doloribus harum,
-            cupiditate, ratione repellat, culpa ipsum corrupti perspiciatis
-            architecto nam animi! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Rem iure culpa in eveniet ab voluptatibus
-            suscipit. Sapiente maiores doloribus harum, cupiditate, ratione
-            repellat, culpa ipsum corrupti perspiciatis architecto nam animi!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure
-            culpa in eveniet ab voluptatibus suscipit. Sapiente maiores
-            doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti
-            perspiciatis architecto nam animi! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Nostrum consectetur nobis, deleniti
-            iste labore, accusamus repudiandae at laborum quidem maxime fugiat
-            expedita sunt soluta? Praesentium atque vel est ipsam corrupti?Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Rem iure culpa in
-            eveniet ab voluptatibus suscipit. Sapiente maiores doloribus harum,
-            cupiditate, ratione repellat, culpa ipsum corrupti perspiciatis
-            architecto nam animi! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Rem iure culpa in eveniet ab voluptatibus
-            suscipit. Sapiente maiores doloribus harum, cupiditate, ratione
-            repellat, culpa ipsum corrupti perspiciatis architecto nam animi!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure
-            culpa in eveniet ab voluptatibus suscipit. Sapiente maiores
-            doloribus harum, cupiditate, ratione repellat, culpa ipsum corrupti
-            perspiciatis architecto nam animi! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Nostrum consectetur nobis, deleniti
-            iste labore, accusamus repudiandae at laborum quidem maxime fugiat
-            expedita sunt soluta? Praesentium atque vel est ipsam corrupti?
-          </span>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
         <div id="MidColumn">
           <span>
@@ -244,24 +248,21 @@
           </span>
         </div>
       </div>
+      <div id="DoubleColumnContaner">
+        <div></div>
+        <div></div>
+      </div>
+      <div id="informationBar">
+        <marquee behavior="scroll" direction="">
+          <span style="color: beige;">Időjárás:33 fok Budapest Napos 11:33</span>
+        </marquee>
+      </div>
+      <div id="tripleColumnContainer">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <div id="footer">Footer</div>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </body>
 </html>
